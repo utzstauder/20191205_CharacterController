@@ -7,6 +7,11 @@ public class MouseRotation : MonoBehaviour
     public float speedX = 1f;
     public float speedY = 1f;
 
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
+
     private void LateUpdate()
     {
         if (speedX > 0)
